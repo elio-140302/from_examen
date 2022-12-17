@@ -1,0 +1,30 @@
+<body>
+<div id="container" class="login-con  rounded-2">
+    <div class="row g-0">
+      <div class="title col-sm-6 col-md-7">
+          <div class="form-floating mb-3">
+              <h2 class="text-white px-4 fs-1">Los secretos de Asius</h2>
+          </div>
+      </div>
+
+      <div class="log col-6 col-md-5 px-5">
+          <div class="login">
+              <div class="login-from">
+                  <form  (ngSubmit)="formSubmit()">
+                      <div class="input-line-container">
+                          <span class="name-input fs-5 ">Usuario</span>
+                          <input type="text" required [(ngModel)] = "datalogin.username" name="username" class="input-line" id="email1"  placeholder="username">
+                      </div>
+                      <div class="input-line-container">
+                          <span class="name-input fs-5">Contraseña</span>
+                          <input required [(ngModel)] = "datalogin.password"  type="password" name="password" class="input-line" id="password1" placeholder=" password">
+                      </div>
+                      <input type="button"   type ='submit' id="iniciarSesion" value="Iniciar sesion" class="buttons-login">
+                      <input type="button" type ="reset"  id="iniciarSesion" value="Limpiar" class="buttons-login">
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  </body>
